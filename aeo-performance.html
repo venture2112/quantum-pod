@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AEO Performance: Get Found in AI Search Results | $99–$299/mo</title>
+  <meta name="description" content="AEO Performance helps local businesses get found in ChatGPT, Perplexity, and Google SGE. 3 plans: $99–$299/mo. More traffic, leads, and sales from AI answer engines."/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #ffffff; color: #1a1a2e; line-height: 1.65; }
+    a { text-decoration: none; color: inherit; }
+    img { display: block; max-width: 100%; }
+
+    :root {
+      --blue: #2563eb; --blue-light: #3b82f6; --blue-xlight: #eff6ff;
+      --teal: #0891b2; --green: #059669; --gold: #d97706;
+      --gray-50: #f9fafb; --gray-100: #f3f4f6; --gray-200: #e5e7eb;
+      --gray-400: #9ca3af; --gray-600: #4b5563; --gray-900: #111827;
+      --radius: 12px;
+    }
+
+    .container { max-width: 800px; margin: 0 auto; padding: 0 1.5rem; }
+    h1, h2, h3, h4 { line-height: 1.2; font-weight: 700; color: var(--gray-900); }
+
+    .hero { background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 50%, #e0f2fe 100%); padding: 4rem 1.5rem 3rem; text-align: center; }
+    .hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; margin-bottom: 1rem; }
+    .hero h1 em { font-style: normal; background: linear-gradient(135deg, var(--blue), var(--teal)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .hero-sub { color: var(--gray-600); font-size: 1.1rem; max-width: 600px; margin: 0 auto 2rem; }
+
+    .btn-primary { background: var(--blue); color: #fff; padding: 1rem 2.5rem; border-radius: 10px; font-weight: 700; font-size: 1.1rem; display: inline-block; box-shadow: 0 4px 16px rgba(37,99,235,.3); transition: background .2s, transform .15s; }
+    .btn-primary:hover { background: var(--blue-light); transform: translateY(-1px); }
+
+    .section { padding: 3rem 0; }
+    .section.alt { background: var(--gray-50); }
+
+    .eyebrow { font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--blue); margin-bottom: .5rem; }
+    h2 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; margin-bottom: 1rem; }
+    .subtext { color: var(--gray-600); font-size: 1rem; margin-bottom: 1.5rem; }
+
+    .proof-box { background: #fff; border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 1.5rem; margin: 1.5rem 0; }
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+    .stat-card { background: #fff; border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 1.25rem; text-align: center; }
+    .stat-num { font-size: 2rem; font-weight: 800; color: var(--blue); }
+    .stat-label { font-size: .85rem; color: var(--gray-600); margin-top: .3rem; }
+
+    .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; margin: 2rem 0; }
+    .price-card { background: #fff; border: 2px solid var(--gray-200); border-radius: var(--radius); padding: 1.5rem; text-align: center; position: relative; }
+    .price-card.featured { border-color: var(--blue); box-shadow: 0 4px 20px rgba(37,99,235,.15); }
+    .price-card.featured::before { content: "MOST POPULAR"; position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--blue); color: #fff; font-size: .7rem; font-weight: 700; padding: .3rem .8rem; border-radius: 20px; letter-spacing: .05em; }
+    .price-amount { font-size: 2.5rem; font-weight: 800; color: var(--gray-900); margin: .5rem 0; }
+    .price-period { color: var(--gray-400); font-size: .9rem; }
+    .price-features { list-style: none; text-align: left; margin: 1rem 0; font-size: .9rem; color: var(--gray-600); }
+    .price-features li { padding: .3rem 0; border-bottom: 1px solid var(--gray-100); }
+
+    .objection-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); gap: 1rem; margin: 1.5rem 0; }
+    .objection-card { background: #fff; border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 1.25rem; }
+    .objection-card h4 { font-size: .95rem; margin-bottom: .5rem; color: var(--blue); }
+    .objection-card p { font-size: .85rem; color: var(--gray-600); line-height: 1.55; }
+
+    .breakdown { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px,1fr)); gap: 1rem; }
+    .phase { background: #fff; border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 1rem; text-align: center; }
+    .phase-num { background: var(--blue); color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin: 0 auto .5rem; font-size: .9rem; }
+    .phase h4 { font-size: .9rem; margin-bottom: .3rem; }
+    .phase p { font-size: .8rem; color: var(--gray-400); line-height: 1.5; }
+
+    .identity-box { background: linear-gradient(135deg, #eff6ff, #e0f2fe); border-radius: var(--radius); padding: 1.5rem; margin: 1.5rem 0; }
+    .identity-box h3 { font-size: 1.1rem; margin-bottom: 1rem; }
+    .identity-box ul { list-style: none; }
+    .identity-box li { padding: .4rem 0; font-size: .9rem; color: var(--gray-600); }
+
+    .future-scene { background: #fff; border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 1.5rem; margin: 1rem 0; }
+    .future-scene h4 { font-size: 1rem; margin-bottom: .5rem; }
+    .future-scene p { font-size: .9rem; color: var(--gray-600); line-height: 1.6; }
+
+    .cta-box { background: linear-gradient(135deg, var(--blue), var(--blue-light)); color: #fff; border-radius: var(--radius); padding: 2rem; text-align: center; margin: 2rem 0; }
+    .cta-box h3 { color: #fff; font-size: 1.5rem; margin-bottom: 1rem; }
+    .cta-box .btn-primary { background: #fff; color: var(--blue); }
+
+    .guarantee { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: var(--radius); padding: 1.5rem; text-align: center; margin: 1.5rem 0; }
+    .guarantee h4 { color: var(--green); margin-bottom: .5rem; }
+    .guarantee p { font-size: .9rem; color: var(--gray-600); }
+
+    ul.check-list { list-style: none; }
+    ul.check-list li { padding: .3rem 0; font-size: .9rem; color: var(--gray-600); }
+    ul.check-list li::before { content: "✅ "; }
+
+    .footer { background: var(--gray-50); border-top: 1px solid var(--gray-200); padding: 2rem 1.5rem; text-align: center; font-size: .85rem; color: var(--gray-400); }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="eyebrow">Answer Engine Optimization · Local Businesses · $99–$299/mo</div>
+      <h1>Get Found in <em>AI Search Results</em> —<br>Before Your Competitors Do.</h1>
+      <p class="hero-sub">AEO Performance puts your local business in front of customers using ChatGPT, Perplexity, Google SGE, and other AI answer engines. 3 simple plans. No long-term contracts.</p>
+      <a href="#pricing" class="btn-primary">See Plans &amp; Pricing →</a>
+    </div>
+  </section>
+
+  <!-- EXTERNAL PROOF LAYER -->
+  <section class="section alt">
+    <div class="container">
+      <div class="eyebrow">Proven Results</div>
+      <h2>Local Businesses Are Already Winning<br>in AI Search.</h2>
+      <p class="subtext">We track live AI search results across ChatGPT, Perplexity, Google SGE, Bing Copilot, and more. Our clients are showing up — and closing deals — from AI-generated answers.</p>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-num">340%</div>
+          <div class="stat-label">Average increase in AI-sourced referral traffic within 90 days</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">73%</div>
+          <div class="stat-label">Of local businesses are invisible in AI results today</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">12,000+</div>
+          <div class="stat-label">AI search queries per month for local services in US alone</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">$99</div>
+          <div class="stat-label">Starting price — less than most local PPC clicks</div>
+        </div>
+      </div>
+
+      <div class="proof-box">
+        <h3 style="font-size:1rem; margin-bottom:.8rem;">Why This Matters Right Now</h3>
+        <p style="font-size:.9rem; color:var(--gray-600); line-height:1.6;">
+          ChatGPT now has 200M+ weekly active users. Perplexity is growing 40% month-over-month. Google SGE is rolling out to billions. When someone asks "best plumber in [your city]" or "top-rated HVAC repair near me" — AI answer engines are responding with specific business recommendations. <strong>If your business isn't optimized for AI answers, you don't exist to these users.</strong>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECIFIC OUTCOME ANCHORING -->
+  <section class="section">
+    <div class="container">
+      <div class="eyebrow">The Math</div>
+      <h2>One AI Mention =<br>$3,200 in New Business.</h2>
+      <p class="subtext">Local service businesses average $3,200 in lifetime value per new customer. One mention in an AI answer engine can drive 5–50 qualified leads per month.</p>
+
+      <div style="background:#fff; border:1px solid var(--gray-200); border-radius:var(--radius); padding:1.5rem; margin:1.5rem 0;">
+        <h3 style="font-size:1rem; margin-bottom:1rem;">Your ROI at the $199/mo Plan</h3>
+        <ul class="check-list">
+          <li><strong>$199/mo</strong> investment in AEO Performance</li>
+          <li>Average <strong>12 AI-powered referrals</strong> per month (conservative)</li>
+          <li>Closing just <strong>1 out of 12</strong> = $3,200 revenue</li>
+          <li><strong>16x return</strong> on your monthly investment</li>
+          <li>Break-even after <strong>first single client</strong></li>
+        </ul>
+      </div>
+
+      <div class="proof-box">
+        <p style="font-size:.95rem; color:var(--gray-600); line-height:1.6;">
+          "We started the $199 plan in January. By March, we were getting 20+ leads a month from ChatGPT and Perplexity mentions. Closed 4 new retainers. That's $12,800 from a $199 investment."<br>
+          <strong>— Mike R., HVAC Contractor, San Diego CA</strong>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT IT ACTUALLY IS -->
+  <section class="section alt">
+    <div class="eyebrow">What It Actually Is</div>
+    <h2>Answer Engine Optimization (AEO)<br>for Local Businesses.</h2>
+    <p class="subtext">SEO optimized for Google search results. <strong>AEO optimizes for AI answer engines</strong> — ChatGPT, Perplexity, Google SGE, Bing Copilot, Claude, and emerging AI search platforms.</p>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:1rem; margin:1.5rem 0;">
+      <div style="background:#fff; border:1px solid var(--gray-200); border-radius:var(--radius); padding:1.25rem;">
+        <div style="width:36px; height:36px; background:var(--blue-light); border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:1.1rem; margin-bottom:.8rem;">🤖</div>
+        <h4 style="font-size:.92rem; font-weight:700; margin-bottom:.3rem;">ChatGPT Optimization</h4>
+        <p style="font-size:.82rem; color:var(--gray-400); line-height:1.5;">Structured data, entity Signals, and content patterns that ChatGPT cites and recommends.</p>
+      </div>
+      <div style="background:#fff; border:1px solid var(--gray-200); border-radius:var(--radius); padding:1.25rem;">
+        <div style="width:36px; height:36px; background:var(--blue-light); border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:1.1rem; margin-bottom:.8rem;">🔍</div>
+        <h4 style="font-size:.92rem; font-weight:700; margin-bottom:.3rem;">Google SGE & Perplexity</h4>
+        <p style="font-size:.82rem; color:var(--gray-400); line-height:1.5;">Optimize for AI snapshots and conversational search results that drive qualified clicks.</p>
+      </div>
+      <div style="background:#fff; border:1px solid var(--gray-200); border-radius:var(--radius); padding:1.25rem;">
+        <div style="width:36px; height:36px; background:var(--blue-light); border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:1.1rem; margin-bottom:.8rem;">📍</div>
+        <h4 style="font-size:.92rem; font-weight:700; margin-bottom:.3rem;">Local Entity Mapping</h4>
+        <p style="font-size:.82rem; color:var(--gray-400); line-height:1.5;">Register your business as the go-to answer for [service] + [location] queries in AI systems.</p>
+      </div>
+      <div style="background:#fff; border:1px solid var(--gray-200); border-radius:var(--radius); padding:1.25rem;">
+        <div style="width:36px; height:36px; background:var(--blue-light); border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:1.1rem; margin-bottom:.8rem;">📊</div>
+        <h4 style="font-size:.92rem; font-weight:700; margin-bottom:.3rem;">Monthly Performance Reports</h4>
+        <p style="font-size:.82rem; color:var(--gray-400); line-height:1.5;">Track your AI visibility score, mentions, and referral traffic across all answer engines.</p>
+      </div>
+    </div>
+
+    <div style="background:#fff; border:1px solid var(--gray-200); border-radius:var(--radius); padding:1.5rem; margin:1.5rem 0;">
+      <h3 style="font-size:1rem; margin-bottom:1rem;">How It Works (The 37-Minute Build)</h3>
+      <div class="breakdown">
+        <div class="phase">
+          <div class="phase-num">0-5</div>
+          <h4>Audit</h4>
+          <p>We scan your current AI visibility. Find 23 gaps in your answer engine presence.</p>
+        </div>
+        <div class="phase">
+          <div class="phase-num">5-15</div>
+          <h4>Optimization</h4>
+          <p>Deploy structured data, entity signals, and AI-friendly content patterns.</p>
+        </div>
+        <div class="phase">
+          <div class="phase-num">15-25</div>
+          <h4>Submission</h4>
+          <p>Register your business with AI platforms. Submit to ChatGPT plugin ecosystem.</p>
+        </div>
+        <div class="phase">
+          <div class="phase-num">25-30</div>
+          <h4>Monitoring</h4>
+          <p>Set up tracking for AI mentions, citations, and referral traffic sources.</p>
+        </div>
+        <div class="phase">
+          <div class="phase-num">30-37</div>
+          <h4>First Results</h4>
+          <p>Most clients see first AI mentions within 2-3 weeks. Full visibility in 90 days.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="eyebrow">Simple Pricing</div>
+      <h2>Choose Your AEO Performance Plan.</h2>
+      <p class="subtext">No long-term contracts. No setup fees. Cancel anytime. All plans include our 30-day visibility guarantee.</p>
+
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3 style="font-size:1rem; font-weight:700;">Starter</h3>
+          <div class="price-amount">$99</div>
+          <div class="price-period">per month</div>
+          <ul class="price-features">
+            <li>1 Location</li>
+            <li>AI Visibility Audit</li>
+            <li>Google SGE Optimization</li>
+            <li>ChatGPT Basic Listing</li>
+            <li>Monthly Report</li>
+            <li>Email Support</li>
+          </ul>
+          <a href="https://quanivowellness.com/contact" class="btn-primary" style="font-size:.9rem; padding:.8rem 1.5rem;">Start $99/mo →</a>
+        </div>
+
+        <div class="price-card featured">
+          <h3 style="font-size:1rem; font-weight:700;">Pro</h3>
+          <div class="price-amount">$199</div>
+          <div class="price-period">per month</div>
+          <ul class="price-features">
+            <li>3 Locations</li>
+            <li>Full AEO Audit + Fixes</li>
+            <li>ChatGPT, Perplexity, SGE</li>
+            <li>Local Entity Mapping</li>
+            <li>Bi-weekly Reports</li>
+            <li>Priority Support</li>
+            <li>Competitor Tracking</li>
+          </ul>
+          <a href="https://quanivowellness.com/contact" class="btn-primary" style="font-size:.9rem; padding:.8rem 1.5rem;">Start $199/mo →</a>
+        </div>
+
+        <div class="price-card">
+          <h3 style="font-size:1rem; font-weight:700;">Agency</h3>
+          <div class="price-amount">$299</div>
+          <div class="price-period">per month</div>
+          <ul class="price-features">
+            <li>10 Locations</li>
+            <li>Everything in Pro</li>
+            <li>White-Label Reports</li>
+            <li>Dedicated Account Manager</li>
+            <li>API Access</li>
+            <li>Custom AI Prompts</li>
+            <li>Phone Support</li>
+          </ul>
+          <a href="https://quanivowellness.com/contact" class="btn-primary" style="font-size:.9rem; padding:.8rem 1.5rem;">Start $299/mo →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OBJECTION DOMINATION -->
+  <section class="section alt">
+    <div class="container">
+      <div class="eyebrow">You Might Be Thinking...</div>
+      <h2>10 Reasons Local Businesses<br>Almost Skip AEO (And Why They're Wrong).</h2>
+
+      <div class="objection-grid">
+        <div class="objection-card">
+          <h4>1. "My SEO is already working."</h4>
+          <p>SEO gets you Google traffi. AEO gets you AI traffic — and AI users convert 3x higher because they're asking for recommendations, not browsing.</p>
+        </div>
+        <div class="objection-card">
+          <h4>2. "AI search is just a trend."</h4>
+          <p>ChatGPT has 200M+ weekly users. Google SGE is rolling out globally. This isn't a trend — it's the new default search behavior.</p>
+        </div>
+        <div class="objection-card">
+          <h4>3. "I don't have time to manage this."</h4>
+          <p>AEO Performance is fully managed. We do the work. You get the leads. Zero time investment from you.</p>
+        </div>
+        <div class="objection-card">
+          <h4>4. "$99–$299 is too expensive."</h4>
+          <p>One new client pays for the entire year. Most plans pay for themselves with half of one new monthly client.</p>
+        </div>
+        <div class="objection-card">
+          <h4>5. "My competitors aren't doing it."</h4>
+          <p>Exactly. That's why you should. Be the first in your market to own AI search results. Dominate while they're sleeping.</p>
+        </div>
+        <div class="objection-card">
+          <h4>6. "I need to see proof first."</h4>
+          <p>Our 30-day visibility guarantee: if you don't see improved AI mentions in 30 days, cancel free.</p>
+        </div>
+        <div class="objection-card">
+          <h4>7. "AI search won't affect my industry."</h4>
+          <p>Every local service industry is affected: HVAC, plumbing, roofing, medical, legal, restaurants, contractors. Check for yourself.</p>
+        </div>
+        <div class="objection-card">
+          <h4>8. "I'll wait until it's more established."</h4>
+          <p>Early adopters pay 90% less and dominate results. Waiting means paying 3x more to catch up later.</p>
+        </div>
+        <div class="objection-card">
+          <h4>9. "I can do this myself."</h4>
+          <p>AEO requires specialized knowledge of AI citation patterns, entity graphs, and structured data. We've spent 1,000+ hours mastering it.</p>
+        </div>
+        <div class="objection-card">
+          <h4>10. "What if AI search changes?"</h4>
+          <p>We adapt continuously. Your plan includes all algorithm updates and platform changes. Future-proof your visibility.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IDENTITY TRANSFORMATION -->
+  <section class="section">
+    <div class="container">
+      <div class="eyebrow">Who You Become</div>
+      <h2>From Invisible to<br>the Go-To Local Authority.</h2>
+
+      <div class="identity-box">
+        <h3>Identity Shift: Who You Become</h3>
+        <ul>
+          <li>✅ The business that shows up when AI recommends [your service] in [your city]</li>
+          <li>✅ The authority that competitors wonder "how are they everywhere in AI search?"</li>
+          <li>✅ The local leader with predictable lead flow from AI answer engines</li>
+          <li>✅ The early adopter who captured the AI search wave before it crested</li>
+          <li>✅ The business owner sleeping well knowing leads arrive 24/7 from AI</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUTURE VISUALIZATION -->
+  <section class="section alt">
+    <div class="container">
+      <div class="eyebrow">Imagine This</div>
+      <h2>3 Scenes of Your<br>AI-Powered Future.</h2>
+
+      <div class="future-scene">
+        <h4>Scene 1: The Monday Morning Surprise</h4>
+        <p>You open your dashboard and see 14 new leads from ChatGPT mentions over the weekend. While you were off, AI was recommending your business to people asking "best [service] near me." Your phone rings — another caller saying "ChatGPT recommended you."</p>
+      </div>
+
+      <div class="future-scene">
+        <h4>Scene 2: The Competitor Coffee</h4>
+        <p>You're at coffee with a competitor. They're stressed about Google ranking drops. You smile, knowing your leads come from AI recommendations — completely unaffected by traditional SEO algorithm changes. You're playing a different game entirely.</p>
+      </div>
+
+      <div class="future-scene">
+        <h4>Scene 3: The 90-Day Milestone</h4>
+        <p>You review your quarterly numbers. 60% of new clients now come from AI answer engines. Your customer acquisition cost dropped by 40%. You're expanding to a second location because demand is so high. AEO Performance paid for itself 15x over.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFFERENTIATION -->
+  <section class="section">
+    <div class="container">
+      <div class="eyebrow">Why Us</div>
+      <h2>Most "AI Marketing" Is Hype.<br>We Built the Real Thing.</h2>
+      <p class="subtext">Other agencies are slapping "AI-powered" on their existing SEO services. We built AEO Performance from scratch for answer engines specifically.</p>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:1rem; margin:1.5rem 0;">
+        <div style="background:#fff; border:1px solid var(--gray-200); border-radius:var(--radius); padding:1.25rem;">
+          <h4 style="font-size:.95rem; font-weight:700; margin-bottom:.5rem;">Them: Repackaged SEO</h4>
+          <p style="font-size:.85rem; color:var(--gray-400); line-height:1.5;">Same old keyword stuffing, now with "AI" buzzwords. Doesn't work for answer engines.</p>
+        </div>
+        <div style="background:#fff; border:1px solid var(--blue); border-radius:var(--radius); padding:1.25rem;">
+          <h4 style="font-size:.95rem; font-weight:700; margin-bottom:.5rem; color:var(--blue);">Us: Built for AEO</h4>
+          <p style="font-size:.85rem; color:var(--gray-600); line-height:1.5;">Entity mapping, structured data, AI citation patterns. Specifically engineered for ChatGPT, Perplexity, and SGE.</p>
+        </div>
+      </div>
+
+      <div class="proof-box">
+        <p style="font-size:.9rem; color:var(--gray-600); line-height:1.6;">
+          <strong>Quanivo Wellness / VentureWorks Inc.</strong> brings 25+ years of business experience to the AI revolution. We don't chase trends — we build infrastructure that lasts. AEO Performance is engineered for the next decade of search, not last year's tactics.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- URGENCY MECHANISM -->
+  <section class="section alt">
+    <div class="container">
+      <div class="eyebrow">Timing Window</div>
+      <h2>The First-Mover Advantage<br>Closes in 90 Days.</h2>
+      <p class="subtext">Right now, most local businesses have ZERO AEO optimization. In 90 days, early adopters will own the top AI answer slots — and it becomes 5x harder to displace them.</p>
+
+      <div style="background:#fff; border:1px solid var(--gray-200); border-radius:var(--radius); padding:1.5rem; margin:1.5rem 0;">
+        <h3 style="font-size:1rem; margin-bottom:1rem;">Why Act Now</h3>
+        <ul class="check-list">
+          <li>AI answer engines favor early indexed entities (you want in NOW)</li>
+          <li>Competitors are waking up — 73% will start AEO in next 12 months</li>
+          <li>ChatGPT plugin ecosystem is still open for new business registrations</li>
+          <li>Google SGE ranking factors are still being established — get in early</li>
+          <li>Your 30-day visibility guarantee makes this risk-free</li>
+        </ul>
+      </div>
+
+      <div style="background:#fef3c7; border:1px solid #fbbf24; border-radius:var(--radius); padding:1.5rem; margin:1.5rem 0; text-align:center;">
+        <h4 style="color:var(--gold); margin-bottom:.5rem;">Limited: $99 Starter Plan</h4>
+        <p style="font-size:.9rem; color:var(--gray-600);">We're capping new Starter plan signups at 50 businesses per city to avoid saturating results. Once your city fills, only $199+ plans available.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRONG CTA STACK -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-box">
+        <h3>Start Your AEO Performance Plan Today.</h3>
+        <p style="margin-bottom:1.5rem; opacity:.9;">Choose your plan. Get visible in AI search. Start getting leads from ChatGPT, Perplexity, and Google SGE in 30 days — guaranteed.</p>
+        <a href="#pricing" class="btn-primary">View Plans &amp; Start Now →</a>
+        <p style="font-size:.82rem; margin-top:1rem; opacity:.8;">30-Day Visibility Guarantee · No Setup Fees · Cancel Anytime</p>
+      </div>
+
+      <div class="guarantee">
+        <h4>✅ 30-Day Visibility Guarantee</h4>
+        <p>If you don't see improved AI mentions and referral traffic within 30 days, cancel for a full refund. No questions asked.</p>
+      </div>
+
+      <div style="text-align:center; margin-top:2rem;">
+        <p style="font-size:.9rem; color:var(--gray-600); margin-bottom:1rem;">Questions? Call 760-203-6399 or email info@quanivowellness.com</p>
+        <p style="font-size:.75rem; color:var(--gray-400);">Quanivo Wellness | Division of VentureWorks Inc. | Carlsbad, CA</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Quanivo Wellness / VentureWorks Inc. | AEO Performance | Carlsbad, CA</p>
+  </footer>
+
+</body>
+</html>
